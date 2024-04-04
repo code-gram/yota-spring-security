@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/yotacli/static/css/main.3f338ad5.css",
+    "main.js": "/yotacli/static/js/main.24aff255.js",
+    "static/js/453.e20d120a.chunk.js": "/yotacli/static/js/453.e20d120a.chunk.js",
+    "index.html": "/yotacli/index.html",
+    "main.3f338ad5.css.map": "/yotacli/static/css/main.3f338ad5.css.map",
+    "main.24aff255.js.map": "/yotacli/static/js/main.24aff255.js.map",
+    "453.e20d120a.chunk.js.map": "/yotacli/static/js/453.e20d120a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f338ad5.css",
+    "static/js/main.24aff255.js"
+  ]
+}

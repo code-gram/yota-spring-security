@@ -1,0 +1,31 @@
+{
+  id: "ea7a3c03-6396-4431-962e-7b72f036760f",
+  name: "UsersController",
+  description: "/users",
+  icon: "GENERATED_FOLDER",
+  sortWeight: 2000000,
+  requests: [
+    {
+      id: "9c7f1d29-2d38-4358-a740-afa1f882255b",
+      name: "/users/get/all-trainers",
+      description: "getAllTrainers",
+      method: "GET",
+      url: "{{baseUrl}}/users/get/all-trainers",
+      auth: {
+        type: "BEARER",
+        bearer: {
+          token: "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYW5rYWouc2hhcm1hQHlhc2guY29tIiwiZW5jcnlwdGlvbi1rZXkiOiI2Mjc5NTFlMi00NmY0LTRmZmItYmYxYi05Zjg3MzgzN2MzOTQiLCJyb2xlcyI6IlJPTEVfVEVDSE5JQ0FMX01BTkFHRVIiLCJmdWxsTmFtZSI6IlBhbmthaiBTaGFybWEiLCJleHAiOjE3MTIxMjMyNTksImlhdCI6MTcxMjEyMTQ1OX0.qaf32-j9vFWM__sDvvAZl1dxqzcYdLtf9x2VnA3N4e8XEgKKvZ-BTtnf9H8hNK4kTcWGGc6q9XKYcdc17-kvww"
+        }
+      },
+      methodForDisplay: "GET"
+    },
+    {
+      id: "d03745c9-1a69-4547-88de-28ecef3c23e0",
+      name: "/users/get/all-students",
+      description: "getAllStudents",
+      method: "GET",
+      url: "{{baseUrl}}/users/get/all-students",
+      methodForDisplay: "GET"
+    }
+  ]
+}

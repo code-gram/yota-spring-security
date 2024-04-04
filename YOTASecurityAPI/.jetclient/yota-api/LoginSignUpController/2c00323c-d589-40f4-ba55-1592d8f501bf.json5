@@ -1,0 +1,65 @@
+{
+  id: "2c00323c-d589-40f4-ba55-1592d8f501bf",
+  name: "LoginSignUpController",
+  icon: "GENERATED_FOLDER",
+  sortWeight: 1000000,
+  requests: [
+    {
+      id: "9164ff54-b93c-4f09-80d8-45ce92378415",
+      name: "/login",
+      description: "login",
+      method: "POST",
+      url: "{{baseUrl}}/login",
+      headers: [
+        {
+          key: "Content-Type",
+          value: "application/json"
+        }
+      ],
+      body: {
+        type: "JSON",
+        raw: '{\
+  "email" : "pankaj.sharma@yash.com",\
+  "password" : "123456"\
+}'
+      },
+      methodForDisplay: "POST"
+    },
+    {
+      id: "1876fdc3-ada7-4e7c-b66b-a36bdeb3499e",
+      name: "/register",
+      description: "register",
+      method: "POST",
+      url: "{{baseUrl}}/register",
+      headers: [
+        {
+          key: "Content-Type",
+          value: "application/json"
+        }
+      ],
+      body: {
+        type: "JSON",
+        raw: '{\
+  "fullName" : "Jaynam Sanghvi",\
+  "emailAdd" : "jaynam.sanghvi@yash.com",\
+  "password" : "123456",\
+  "confirmPassword" : "123456"\
+}'
+      },
+      methodForDisplay: "POST"
+    },
+    {
+      id: "29499024-e332-4fb0-9605-16b37b6b1762",
+      name: "/get/user",
+      description: "getUserByEmail",
+      method: "GET",
+      url: "{{baseUrl}}/get/user?email",
+      queryParams: [
+        {
+          key: "email"
+        }
+      ],
+      methodForDisplay: "GET"
+    }
+  ]
+}

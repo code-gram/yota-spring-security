@@ -1,0 +1,22 @@
+{
+  id: "4cfa8f05-d18a-42dc-8681-01c9c7022f42",
+  name: "yota-api",
+  icon: "MODULE",
+  sortWeight: 1000000,
+  variables: {
+    default: {
+      baseUrl: 'http://localhost:8080/yota-api'
+    }
+  },
+  integrationProperties: {
+    framework: "SPRING",
+    spring: {
+      searchInLibraries: false,
+      modules: [
+        "YOTASecurityAPI"
+      ],
+      requestNamingStrategy: "URL_AND_METHOD_NAME",
+      projectScope: false
+    }
+  }
+}

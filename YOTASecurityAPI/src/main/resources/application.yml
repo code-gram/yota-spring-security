@@ -1,0 +1,33 @@
+server :
+  port : 8090
+  servlet :
+    context-path : /yota-api
+
+spring :
+  application :
+    name : YOTASecurityAPI
+  
+  #db config
+  datasource :
+    username : root
+    password : root
+    url : jdbc:mysql://localhost:3306/yota-security-poc?createDatabaseIfNotExist=true
+    driver-class-name : com.mysql.cj.jdbc.Driver
+  
+  jpa :
+    hibernate :
+      ddl-auto : update
+    show-sql : true
+
+#update this path according to your requirement
+logging :
+  file :
+    name : D:/Official/Projects/IdeaProjects/Spring Projects/YOTASecurityPOC/Logging/yota-security-api.log
+  
+  logback :
+    rollingpolicy :
+      max-file-size : 20MB
+
+jwt :
+  token :
+    signing-key : ec0ba134-e475-4866-9cfb-dc1000eb66c0
